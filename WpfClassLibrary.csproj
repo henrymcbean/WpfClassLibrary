@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E272152-6F9B-4E58-9933-737ED11D1570}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WpfClassLibrary</RootNamespace>
+    <AssemblyName>WpfClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\WpfGordn\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WPF.MDI">
+      <HintPath>..\..\WPF.MDI\WPF.MDI\bin\Debug\WPF.MDI.dll</HintPath>
+    </Reference>
+    <Reference Include="WpfDependancy, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WpfDependancy\WpfDependancy\bin\Debug\WpfDependancy.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonUtilClass.cs" />
+    <Compile Include="CostdbExtensions.cs" />
+    <Compile Include="DataTableAccess.cs" />
+    <Compile Include="Model\AcnameACNMainrec.cs" />
+    <Compile Include="Model\CareinsCINST_MainRec.cs" />
+    <Compile Include="Model\ColrcombColrCombMain.cs" />
+    <Compile Include="Model\ColrcombColrCombSibl.cs" />
+    <Compile Include="Model\CpcustsCPCSTDescRec.cs" />
+    <Compile Include="Model\CpcustsCPCSTMainRec.cs" />
+    <Compile Include="Model\CpcustsCPCSTNotesRec.cs" />
+    <Compile Include="Model\CpcustsCPCSTOperDescRec.cs" />
+    <Compile Include="Model\DaysoffHHeaderInfo.cs" />
+    <Compile Include="Model\DaysoffHHolidaysInfo.cs" />
+    <Compile Include="Model\DaysoffHVariableDaysInfo.cs" />
+    <Compile Include="Model\DocktboxDBC_BoxGroupRec.cs" />
+    <Compile Include="Model\DocktboxDBC_DocketNumbers.cs" />
+    <Compile Include="Model\DocktboxDBC_ItemsRec.cs" />
+    <Compile Include="Model\DocktboxDBC_MainRec.cs" />
+    <Compile Include="Model\Gmcpa1CPA1InstNotsRec.cs" />
+    <Compile Include="Model\Gmcpa1CPA1InstRec.cs" />
+    <Compile Include="Model\Gmcpa1CPA1MainRec.cs" />
+    <Compile Include="Model\Gmcpa1CPA1MatsNotsRec.cs" />
+    <Compile Include="Model\Gmcpa1CPA1MatsRec.cs" />
+    <Compile Include="Model\GmdfnotsGMDFNotesMainRec.cs" />
+    <Compile Include="Model\GmdfnotsGMDFNotesRec.cs" />
+    <Compile Include="Model\GmpacksPKSMainRec.cs" />
+    <Compile Include="Model\GopacksGOPKSMainRec.cs" />
+    <Compile Include="Model\GopacksGOPKSSiblRec.cs" />
+    <Compile Include="Model\HeadftHDFTFooterTextRec.cs" />
+    <Compile Include="Model\HeadftHDFTHeaderTextRec.cs" />
+    <Compile Include="Model\HeadftHDFTModulesRec.cs" />
+    <Compile Include="Model\MatalcnMAMainRec.cs" />
+    <Compile Include="Model\MatsbinMatBinMainRec.cs" />
+    <Compile Include="Model\UsergordUserGordMainRec.cs" />
+    <Compile Include="Model\WgmateCompanyInfo.cs" />
+    <Compile Include="Model\ConsumptConsumptMRec.cs" />
+    <Compile Include="Model\CospinstCOIInstsRec.cs" />
+    <Compile Include="Model\CospinstCOIMainRec.cs" />
+    <Compile Include="Model\CostdbCTMatsFFRec.cs" />
+    <Compile Include="Model\CostdbCTOpersRec.cs" />
+    <Compile Include="Model\CountryCode.cs" />
+    <Compile Include="Model\CstextraCSTEColoursRec.cs" />
+    <Compile Include="Model\CstextraCSTEModifyRec.cs" />
+    <Compile Include="Model\CstextraCSTESSizeInfoRec.cs" />
+    <Compile Include="Model\CstextraCSTEStyleUserFlags.cs" />
+    <Compile Include="Model\CstextraCSTEStyleUserRecs.cs" />
+    <Compile Include="Model\CstextraCSTExtraRec.cs" />
+    <Compile Include="Model\CusprefsCusPrefsMRec.cs" />
+    <Compile Include="Model\CusprefsCusPrefsSiblRec.cs" />
+    <Compile Include="Model\DelivsDelivItems.cs" />
+    <Compile Include="Model\DelivsDelivNotes.cs" />
+    <Compile Include="Model\DelivsDelivRec.cs" />
+    <Compile Include="Model\DelivsDocketRec.cs" />
+    <Compile Include="Model\DelivsReturnItems.cs" />
+    <Compile Include="Model\DelivsReturnNotes.cs" />
+    <Compile Include="Model\DelivsReturnRec.cs" />
+    <Compile Include="Model\DocketColrsQtys.cs" />
+    <Compile Include="Model\DocketDockInsts.cs" />
+    <Compile Include="Model\DocketDockNotes.cs" />
+    <Compile Include="Model\DocketMainData.cs" />
+    <Compile Include="Model\DocketMatIssued.cs" />
+    <Compile Include="Model\DocketOrgCostings.cs" />
+    <Compile Include="Model\DocketRollsIssued.cs" />
+    <Compile Include="Model\DocketSTMatIssued.cs" />
+    <Compile Include="Model\DocketStyles.cs" />
+    <Compile Include="Model\DockrollDKRLMainData.cs" />
+    <Compile Include="Model\DockrollDKRLRollsIssued.cs" />
+    <Compile Include="Model\EmbelishEMBInstsRec.cs" />
+    <Compile Include="Model\EmbelishEMBMainRec.cs" />
+    <Compile Include="Model\GCreditCREPackingNotesRec.cs" />
+    <Compile Include="Model\GinvoiceINVColourRec.cs" />
+    <Compile Include="Model\GinvoiceINVDespatchNotesRec.cs" />
+    <Compile Include="Model\GinvoiceINVInvoiceNotesRec.cs" />
+    <Compile Include="Model\GinvoiceINVMainRec.cs" />
+    <Compile Include="Model\GinvoiceINVPackingNotesRec.cs" />
+    <Compile Include="Model\GinvoiceINVProformaNotesRec.cs" />
+    <Compile Include="Model\GinvoiceINVStyleRec.cs" />
+    <Compile Include="Model\GlformatGLFTModulesRec.cs" />
+    <Compile Include="Model\GmcopersGMCOperMRec.cs" />
+    <Compile Include="Model\GmcopersGMCOpersRec.cs" />
+    <Compile Include="Model\GmcpasCPASDescRec.cs" />
+    <Compile Include="Model\GmcpasCPASLDescRec.cs" />
+    <Compile Include="Model\GmcpasCPASMainRec.cs" />
+    <Compile Include="Model\GmcpasCPASOperDescRec.cs" />
+    <Compile Include="Model\GmcurrsContext.cs" />
+    <Compile Include="Model\GmcurrsCURCurrenciesRec.cs" />
+    <Compile Include="Model\GmlinenoGMLNMainRec.cs" />
+    <Compile Include="Model\GmparamsPARDescriptorsRec.cs" />
+    <Compile Include="Model\GmparamsPARParametersRec.cs" />
+    <Compile Include="Model\GmpasswGMModsRec.cs" />
+    <Compile Include="Model\GmpasswGMSubModsFuncRec.cs" />
+    <Compile Include="Model\GmpasswGMSubModsRec.cs" />
+    <Compile Include="Model\GmpasswGMUserRec.cs" />
+    <Compile Include="Model\GmsizesGmSizeNumbers.cs" />
+    <Compile Include="Model\GmsizesGMSizesRec.cs" />
+    <Compile Include="Model\GraderulGradeRuleMainRec.cs" />
+    <Compile Include="Model\GraderulGradeRuleSiblRec.cs" />
+    <Compile Include="Model\GstkdbGarsMRec.cs" />
+    <Compile Include="Model\MatRequiremts.cs" />
+    <Compile Include="Model\MatsupldMATSUPLDMainRec.cs" />
+    <Compile Include="Model\MatsupldMATSUPLDSiblRec.cs" />
+    <Compile Include="Model\MlayoutcMLAYOUTCHeaderRec.cs" />
+    <Compile Include="Model\MlayoutcMLAYOUTCSiblingRec.cs" />
+    <Compile Include="Model\MlaysetMLSETMainRec.cs" />
+    <Compile Include="Model\MlaysetMLSETSiblingRec.cs" />
+    <Compile Include="Model\MordsChasingNotes.cs" />
+    <Compile Include="Model\MordsItems.cs" />
+    <Compile Include="Model\MordsLCDetails.cs" />
+    <Compile Include="Model\MordsMatSizes.cs" />
+    <Compile Include="Model\MordsMOPayments.cs" />
+    <Compile Include="Model\MordsMOTransport.cs" />
+    <Compile Include="Model\MordsNotes.cs" />
+    <Compile Include="Model\MordsOrderNo.cs" />
+    <Compile Include="Model\MordsrefMOREFMainRec.cs" />
+    <Compile Include="Model\MstkcostMSCSTMainRec.cs" />
+    <Compile Include="Model\MstknotsMSTKNotesMRec.cs" />
+    <Compile Include="Model\MstknotsMSTKNotesRec.cs" />
+    <Compile Include="Model\NommodelNMODELMRec.cs" />
+    <Compile Include="Model\OpercodeGLOperCodeRec.cs" />
+    <Compile Include="Model\OrdcolnOrdColnMRec.cs" />
+    <Compile Include="Model\OrdcolnOrdColnSelRec.cs" />
+    <Compile Include="Model\OrdcolnOrdColnSRec.cs" />
+    <Compile Include="Model\OrdersexORDEXAdditions1Rec.cs" />
+    <Compile Include="Model\OrdersexORDEXAdditions2Rec.cs" />
+    <Compile Include="Model\OrdersexORDEXDelStlClrRec.cs" />
+    <Compile Include="Model\OrdersexORDEXFileRec.cs" />
+    <Compile Include="Model\OrdersexORDEXMainRec.cs" />
+    <Compile Include="Model\OrdersOrdColrsQtys.cs" />
+    <Compile Include="Model\OrdersOrdCosts.cs" />
+    <Compile Include="Model\OrdersOrdDelivAddr.cs" />
+    <Compile Include="Model\OrdersOrdMainData.cs" />
+    <Compile Include="Model\OrdersOrdStyles.cs" />
+    <Compile Include="Model\OrdersOrdStylNotes.cs" />
+    <Compile Include="Model\OrdnotesOrdMNotsRec.cs" />
+    <Compile Include="Model\OrdnotesOrdNotsRec.cs" />
+    <Compile Include="Model\OverheadOVHMainRec.cs" />
+    <Compile Include="Model\OverheadOVHSiblRec.cs" />
+    <Compile Include="Model\PackinstPACInstsRec.cs" />
+    <Compile Include="Model\PackinstPACMainRec.cs" />
+    <Compile Include="Model\PricelstXPLMainRec.cs" />
+    <Compile Include="Model\PricelstXPLNotesRec.cs" />
+    <Compile Include="Model\RollsdbIndRolls.cs" />
+    <Compile Include="Model\RollsdbOperRec.cs" />
+    <Compile Include="Model\RollsdbProcRec.cs" />
+    <Compile Include="Model\RollsdbProperties.cs" />
+    <Compile Include="Model\RollsdbRMatSizes.cs" />
+    <Compile Include="Model\RollsdbRMatSizesE.cs" />
+    <Compile Include="Model\RollsdbRollsMRec.cs" />
+    <Compile Include="Model\SelpriceSPRMainRec.cs" />
+    <Compile Include="Model\SelpriceSPRSiblRec.cs" />
+    <Compile Include="Model\SizecostSizeCostMRec.cs" />
+    <Compile Include="Model\SzgridGMSZGMainRec.cs" />
+    <Compile Include="Model\SzgridGMSZGNotsRec.cs" />
+    <Compile Include="Model\SzgridGMSZGSiblRec.cs" />
+    <Compile Include="Model\SzmappngSzMappingRec.cs" />
+    <Compile Include="Model\UsercostUserCostMainRec.cs" />
+    <Compile Include="Model\UserdcktUserDcktMainRec.cs" />
+    <Compile Include="Model\ViewModelBase.cs" />
+    <Compile Include="Model\WadmdirWDIRBankInfoRec.cs" />
+    <Compile Include="Model\WadmdirWDIRDelAddrRec.cs" />
+    <Compile Include="Model\WadmdirWDIRDelRecNotes.cs" />
+    <Compile Include="Model\WadmdirWDIRFactoryInfo.cs" />
+    <Compile Include="Model\WadmdirWDIRFactRecNotes.cs" />
+    <Compile Include="Model\WadmdirWDIRInvAddrRec.cs" />
+    <Compile Include="Model\WadmdirWDIRInvRecNotes.cs" />
+    <Compile Include="Model\WadmdirWDIRMainRec.cs" />
+    <Compile Include="Model\WadmdirWDIRFactoringRec.cs" />
+    <Compile Include="Model\WadmdirWDIRMainRecNotes.cs" />
+    <Compile Include="Model\WGmateConfig.cs" />
+    <Compile Include="Model\XmlConvertor.cs" />
+    <Compile Include="SQLArrayConvert.cs" />
+    <Compile Include="TmpModel\Cpa1TmpCPA1TInstNotsRec.cs" />
+    <Compile Include="TmpModel\Cpa1TmpCPA1TInstRec.cs" />
+    <Compile Include="TmpModel\Cpa1TmpCPA1TMainRec.cs" />
+    <Compile Include="TmpModel\Cpa1TmpCPA1TMatsNotsRec.cs" />
+    <Compile Include="TmpModel\Cpa1TmpCPA1TMatsRec.cs" />
+    <Compile Include="TmpModel\ICloneable.cs" />
+    <Compile Include="UpdateExtension.cs" />
+    <Compile Include="WgmateDBUtilClass.cs" />
+    <Compile Include="WgmatePrintUtilClass.cs" />
+    <Compile Include="WgmateTmpDBUtilClass.cs" />
+    <Compile Include="WpfModelCollection.cs" />
+    <Compile Include="Model\CostdbCostMRec.cs" />
+    <Compile Include="Model\CostdbCTInstsRec.cs" />
+    <Compile Include="Model\CostdbCTMatsRec.cs" />
+    <Compile Include="Model\CostdbCTNotsRec.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\WGmate.sql" />
+    <Content Include="Model\Wgmatelocaldb.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
